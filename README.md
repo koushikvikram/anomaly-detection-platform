@@ -1,5 +1,6 @@
 # A Real-Time Anomaly Detection Platform
 
+![](images/anomaly-platform-banner.jpg)
 
 ## Tools used
 
