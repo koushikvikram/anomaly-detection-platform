@@ -1,6 +1,6 @@
 # A Real-Time Anomaly Detection Platform
 
-> 🚦⚠️👷‍♂️🏗️ Repo Under Costruction 🚦⚠️👷‍♂️🏗️
+> 🚦⚠️👷‍♂️🏗️ Repo Under Construction 🚦⚠️👷‍♂️🏗️
 
 ![](images/anomaly-platform-banner.jpg)
 
