@@ -36,3 +36,24 @@ Some things to note here:
 - There should be no space between the keys for the `--mount` argument
 
 Now, when we enter Jupyter Lab inside the container, we see that the train and test files are available to us.
+
+## Install `make` on Windows
+
+Windows does not support makefiles natively. So, we need to first install the `chocolatey package manager` before installing `make`.
+
+### Steps to Install chocolatey/choco on Windows 10
+1. Click Start and type "powershell"
+2. Right-click Windows Powershell and choose "Run as Administrator"
+3. Paste the following command into Powershell and press enter.
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; `iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+4. Answer Yes when prompted
+5. Close and reopen an elevated PowerShell window (Run as Administrator) to start using choco.
+
+Source: [How to install chocolatey/choco on Windows 10 by JC](https://jcutrer.com/windows/install-chocolatey-choco-windows10)
+
+Now, Run the following command in Powershell to install `make` and you can start using `make` in either the Command Prompt or Powershell:
+```
+choco install make
+```
