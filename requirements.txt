@@ -3,5 +3,3 @@ plotly
 scikit-learn
 matplotlib
 jupyterlab
-fastapi
-uvicorn[standard]
