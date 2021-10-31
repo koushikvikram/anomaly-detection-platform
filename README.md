@@ -122,6 +122,8 @@ curl -X 'POST' \
 }'
 ```
 
+Replace values for `"feature_vector"` with your input values for mean and standard deviation.
+
 Set `"score": true` if you want `anomaly_score` included in the output.
 
 ### CURL Command for `/model_information`:
