@@ -6,6 +6,32 @@
 
 > We've do our development on Windows 10 and used `Git Bash` to run our commands.
 
+## Software Requirements
+
+You'll need the following sofware to execute this project.
+<details>
+<summary> make </summary>
+
+![](images/gnu-make.png)
+
+GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+
+Follow the instructions in the [Install make on Windows](https://github.com/koushikvikram/anomaly-detection-platform#install-make-on-windows) section to install `make` on Windows. 
+
+To install `make` on Linux, follow the instructions listed on GNU's website: https://www.gnu.org/software/make/
+</details>
+
+<details>
+<summary> Docker </summary>
+
+![](docker-logo.jpg)
+
+Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
+
+To install Docker, follow the instructions listed on Docker's website: https://docs.docker.com/desktop/#download-and-install
+</details>
+
+
 ## Makefile Documentation
 
 | Target        | Utility                                                          |
