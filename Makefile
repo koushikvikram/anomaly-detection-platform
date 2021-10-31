@@ -21,7 +21,7 @@ API_PORT = 8080
 # Execute "run" as the default target for the "make" command
 .DEFAULT_GOAL := run
 
-help:
+help:	## Lists all targets in this Makefile along with their descriptions
 	@echo Targets available for this Makefile
 	@echo ===========================================
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
