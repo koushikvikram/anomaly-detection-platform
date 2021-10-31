@@ -4,7 +4,21 @@
 
 ![](images/anomaly-platform-banner.jpg)
 
-> We'll do our development on Windows 10 and use `Git Bash` to run our commands.
+> We've do our development on Windows 10 and used `Git Bash` to run our commands.
+
+## Makefile Documentation
+
+| Target        | Utility                                                          |
+|:--------------|:-----------------------------------------------------------------|
+| help          | Lists all targets in this Makefile along with their descriptions |
+| run-jupyter   | Build and Run a Jupyter Lab Container                            |
+| run-api       | Build and Run a Prediction API Container                         |
+| run-all       | Run all containers                                               |
+| stop-jupyter  | Kill and Delete the Jupyter Lab Container                        |
+| stop-api      | Kill and Delete the Prediction API Container                     |
+| stop-all      | Stop all containers                                              |
+| remove-all    | Remove all Docker images                                         |
+
 
 Build the image with jupyter lab using the command
 
