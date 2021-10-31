@@ -4,7 +4,7 @@
 
 ![](images/anomaly-platform-banner.jpg)
 
-We'll do our development on Windows 10.
+> We'll do our development on Windows 10 and use `Git Bash` to run our commands.
 
 Build the image with jupyter lab using the command
 
@@ -56,4 +56,38 @@ Source: [How to install chocolatey/choco on Windows 10 by JC](https://jcutrer.co
 Now, Run the following command in Powershell to install `make` and you can start using `make` in either the Command Prompt or Powershell:
 ```
 choco install make
+```
+
+
+## API Documentation
+
+![](images/api-documentation-1.png)
+![](images/api-documentation-2.png)
+![](images/api-documentation-3.png)
+![](images/api-documentation-4.png)
+![](images/api-documentation-5.png)
+
+### CURL Command for `/prediction`:
+
+```bash
+curl -X 'POST' \
+  'http://localhost:8080/prediction' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "feature_vector": [
+    194, 167
+  ],
+  "score": false
+}'
+```
+
+Set `"score": true` if you want `anomaly_score` included in the output.
+
+### CURL Command for `/model_information`:
+
+```bash
+curl -X 'GET' \
+  'http://localhost:8080/model_information' \
+  -H 'accept: application/json'
 ```
