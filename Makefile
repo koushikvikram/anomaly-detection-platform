@@ -22,8 +22,11 @@ API_PORT = 8080
 .DEFAULT_GOAL := run
 
 help:	## Lists all targets in this Makefile along with their descriptions
-	@echo Targets available for this Makefile
-	@echo ===========================================
+	@echo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	@echo +'                                                                        '+
+	@echo +'              'Targets available for this Makefile'                       '+
+	@echo +'                                                                        '+
+	@echo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
 run-jupyter:	## Build and Run a Jupyter Lab Container
