@@ -29,6 +29,19 @@ services:
         expose:
             - 3000
         environment:
-            - GF_SECURITY_ADMIN_USER=${ADMIN_USER}
-            - GF_SECURITY_ADMIN_PASSWORD=${ADMIN_PASSWORD}
+            - GF_SECURITY_ADMIN_USER=${ADMIN_USER:-admin}
+            - GF_SECURITY_ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
             - GF_USERS_ALLOW_SIGN_UP=false
+    
+    caddy:
+        image: stefanprodan/caddy
+        container_name: caddy
+        restart: unless-stopped
+        volumes: 
+            - ./caddy:/etc/caddy
+        environment:
+            - ADMIN_USER=${ADMIN_USER:-admin}
+            - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
+        ports:
+            - 3000:3000
+            - 9090:9090
