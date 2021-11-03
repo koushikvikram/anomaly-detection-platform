@@ -1,0 +1,18 @@
+version: '3'
+volumes:
+    prometheus-data: {}
+    grafana-data: {}
+services:
+    prometheus:
+        image:
+
+        container_name:
+
+        volumes:
+
+        command:
+
+        restart:
+
+        expose:
+            
