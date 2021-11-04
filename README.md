@@ -2,9 +2,9 @@
 
 > 🚦⚠️👷‍♂️🏗️ Repo Under Construction 🚦⚠️👷‍♂️🏗️
 
-![](images/anomaly-platform-banner.jpg)
+![](images/anomaly-platform-banner.png)
 
-> We've do our development on Windows 10 and used `Git Bash` to run our commands.
+> We've done our development and testing on Windows 10 and used `Git Bash` to run our commands.
 
 ## Software Requirements
 
