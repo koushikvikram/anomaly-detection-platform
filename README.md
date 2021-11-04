@@ -32,6 +32,10 @@ To install Docker, follow the instructions listed on Docker's website: https://d
 </details>
 
 
+## Platform Architecture
+
+![](images/architecture.png)
+
 ## Makefile Documentation
 
 | Target        | Utility                                                          |
