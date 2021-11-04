@@ -8,11 +8,6 @@ import uvicorn
 from fastapi import FastAPI
 from prometheus_client import make_asgi_app, Counter, Histogram
 
-app = FastAPI()
-metrics_app = make_asgi_app()
-app.mount("/metrics", metrics_app)
-
-model = load("anomaly-model.joblib")
 
 # Prometheus Metrics
 # ------------------
@@ -23,6 +18,14 @@ model_information_counter = Counter('num_model_info_requests', "Number of 'model
 prediction_hist = Histogram('prediction_output_distribution', 'Distribution of prediction outputs')
 prediction_score_hist = Histogram('prediction_score_distribution', 'Distribution of prediction scores')
 prediction_latency_hist = Histogram('prediction_latency_distribution', 'Distribution of prediction response latency')
+
+
+app = FastAPI()
+metrics_app = make_asgi_app()
+app.mount("/metrics", metrics_app)
+
+model = load("anomaly-model.joblib")
+
 
 
 class PredictionRequest(BaseModel):
@@ -85,4 +88,4 @@ def model_information():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
