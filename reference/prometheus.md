@@ -6,3 +6,4 @@
 
 [How Prometheus Monitoring works | Prometheus Architecture explained](https://www.youtube.com/watch?v=h4Sl21AKiDg)
 
+[Monitoring Docker using Prometheus and grafana](https://www.youtube.com/watch?v=CCi957AnSfc)
