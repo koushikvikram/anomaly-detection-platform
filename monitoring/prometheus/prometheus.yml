@@ -5,4 +5,4 @@ scrape_configs:
     - job_name: 'service'
       scrape_interval: 10s
       static_configs:
-        - targets: ['service:8000']
+        - targets: ['prediction-api:8000'] # container_name:expose specified under the fastapi service defined in docker-compose.yml
