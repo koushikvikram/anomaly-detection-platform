@@ -14,7 +14,7 @@ DATASET_PATH = D:/projects/anomaly-detection-platform/jupyter
 API_IMAGE_NAME = koushik/anomaly-platform-api
 API_DOCKERFILE = service\Dockerfile
 # Same as port in uvicorn.run() in main.py
-API_PORT = 8080
+API_PORT = 8000
 
 .PHONY: help run-jupyter run-api stop-jupyter stop-all
 
