@@ -2,8 +2,8 @@ import random
 import requests
 import pandas as pd
 
-# test_dataset = pd.read_csv("./jupyter/test.csv")
-test_dataset = pd.read_csv("./jupyter/demo.csv")
+test_dataset = pd.read_csv("./jupyter/test.csv")
+# test_dataset = pd.read_csv("./jupyter/demo.csv")
 # shuffle dataset
 test_dataset = test_dataset.sample(frac=1).reset_index(drop=True)
 
@@ -23,6 +23,7 @@ def predict(feature_vector):
 
 # predict on a subset
 test_dataset[:1000].apply(predict, axis=1)
+# test_dataset.apply(predict, axis=1)
 
 model_info = requests.get(
     model_information_endpoint
