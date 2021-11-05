@@ -2,7 +2,8 @@
 
 > 🚦⚠️👷‍♂️🏗️ Repo Under Construction 🚦⚠️👷‍♂️🏗️
 
-![](images/anomaly-platform-banner.png)
+<!-- ![](images/anomaly-platform-banner.png) -->
+![](images/dashboard-gif.gif)
 
 > We've done our development and testing on Windows 10 and used `Git Bash` to run our commands.
 
