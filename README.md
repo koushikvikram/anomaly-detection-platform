@@ -2,7 +2,6 @@
 
 > 🚦⚠️👷‍♂️🏗️ Repo Under Construction 🚦⚠️👷‍♂️🏗️
 
-<!-- ![](images/anomaly-platform-banner.png) -->
 ![](images/dashboard-gif.gif)
 
 > We've done our development and testing on Windows 10 and used `Git Bash` to run our commands.
@@ -35,7 +34,7 @@ To install Docker, follow the instructions listed on Docker's website: https://d
 
 ## Platform Architecture
 
-![](images/architecture.png)
+![](images/architecture-square-grey-background.png)
 
 ## Makefile Documentation
 
