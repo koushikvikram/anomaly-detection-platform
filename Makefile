@@ -58,8 +58,7 @@ run-jupyter:	## Build and Run a Jupyter Lab Container
 build-api:	## Build the Prediction API Docker Image
 	docker build -t $(API_IMAGE_NAME) --file $(API_DOCKERFILE) .
 
-run-api: 		## Build and Run a Prediction API Container
-	docker build -t $(API_IMAGE_NAME) --file $(API_DOCKERFILE) .
+run-api: build-api		## Build and Run a Prediction API Container
 	docker run -d -p $(API_PORT):$(API_PORT) $(API_IMAGE_NAME)
 	@echo -------------------------------------------
 	@echo Prediction API Endpoint: http://localhost:$(API_PORT)/
@@ -114,9 +113,9 @@ $(VENV)/$(BIN)/activate: ./tester/requirements.txt
 	python -m venv $(VENV)
 	$(PIP) install -r ./tester/requirements.txt
 
-test-platform: $(VENV)/$(BIN)/activate
+test-platform: $(VENV)/$(BIN)/activate	## Create a Python Virtual Environment, run tester.py and visualize output in Grafana
 	$(PYTHON) ./tester/tester.py
 
-remove-env:
+remove-env:	## Remove the Python Virtual Environment created for testing
 	rm -rf __pycache__
 	rm -rf $(VENV)
