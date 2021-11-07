@@ -22,20 +22,7 @@ API_DOCKERFILE = service/Dockerfile
 # Same as port in uvicorn.run() in main.py
 API_PORT = 8000
 
-# Python Virtual Environment Variables
-# Windows is the default OS. Specify OS=<YOUR_OS_NAME> along with the 'make' command if you're running a different OS
-OS = Windows
-BIN = bin
-
-ifeq ($(OS), Windows)
-BIN = Scripts
-endif
-
-VENV = venv
-PYTHON = $(VENV)/$(BIN)/python
-PIP = $(VENV)/$(BIN)/pip3
-
-.PHONY: help run-jupyter build-api run-api run-platform run-all stop-jupyter stop-api stop-platform stop-all remove-all test-platform remove-env
+.PHONY: help run-jupyter build-api run-api run-platform run-all stop-jupyter stop-api stop-platform stop-all remove-all
 
 # Execute "run-platform" as the default target for the "make" command
 .DEFAULT_GOAL := run-platform
@@ -109,14 +96,3 @@ remove-all:  ## Remove all Docker images
 	docker rmi -f grafana/grafana:7.1.1
 	docker rmi -f stefanprodan/caddy
 	@echo ========== All Images Removed ==========
-
-$(VENV)/$(BIN)/activate: ./tester/requirements.txt
-	python -m venv $(VENV)
-	$(PIP) install -r ./tester/requirements.txt
-
-test-platform: $(VENV)/$(BIN)/activate
-	$(PYTHON) ./tester/tester.py
-
-remove-env:
-	rm -rf __pycache__
-	rm -rf $(VENV)
