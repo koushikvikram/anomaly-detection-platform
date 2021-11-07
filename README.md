@@ -70,7 +70,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; `iex ((New-Object System.Net.W
 
 Source: [How to install chocolatey/choco on Windows 10 by JC](https://jcutrer.com/windows/install-chocolatey-choco-windows10)
 
-Now, Run the following command in Powershell to install `make` and you can start using `make` in either the Command Prompt or Powershell:
+Now, Run the following command in Powershell to install `make` and you can start using `make` in either the Command Prompt, Powershell or Git Bash:
 ```
 choco install make
 ```
