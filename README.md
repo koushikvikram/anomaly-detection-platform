@@ -36,7 +36,7 @@ To install `make` on Linux, follow the instructions listed on GNU's website: htt
 <details>
 <summary> Docker </summary>
 
-![](docker-logo.jpg)
+![](images/docker-logo.jpg)
 
 Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
 
