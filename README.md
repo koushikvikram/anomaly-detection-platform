@@ -10,6 +10,18 @@
 
 You'll need the following sofware to execute this project.
 <details>
+<summary> Python 3.x </summary>
+
+![](images/python-logo.png)
+
+Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+
+Python comes pre-installed with most Linux and Mac Systems. To install Python, follow the instructions provided here: https://www.python.org/downloads/
+
+Please make sure you install a version of Python 3.x
+</details>
+
+<details>
 <summary> make </summary>
 
 ![](images/gnu-make.png)
