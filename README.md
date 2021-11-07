@@ -8,7 +8,7 @@
 
 ## Software Requirements
 
-You'll need the following sofware to execute this project.
+You'll need the following sofware to run the Anomaly Detection Platform.
 <details>
 <summary> Python 3.x </summary>
 
