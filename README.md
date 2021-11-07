@@ -42,12 +42,16 @@ To install Docker, follow the instructions listed on Docker's website: https://d
 |:--------------|:-----------------------------------------------------------------|
 | help          | Lists all targets in this Makefile along with their descriptions |
 | run-jupyter   | Build and Run a Jupyter Lab Container                            |
+| build-api     | Build the Prediction API Docker Image                            |
 | run-api       | Build and Run a Prediction API Container                         |
-| run-all       | Run all containers                                               |
+| run-platform  | Build and Run the entire Platform                                |
+| run-all       | Run the Platform and the Jupyter Lab Container                   |
 | stop-jupyter  | Kill and Delete the Jupyter Lab Container                        |
 | stop-api      | Kill and Delete the Prediction API Container                     |
-| stop-all      | Stop all containers                                              |
-| remove-all    | Remove all Docker images                                         |
+| stop-all      | Stop the Platform and the Jupyter Lab Container                  |
+| remove-all    | Remove all the Docker images we've created                       |
+| test-platform | Create Python Virtual Environment, run the tester script and visualize output in Grafana |
+| remove-env    | Delete the Python Virtual Environment created for testing        |
 
 
 Build the image with jupyter lab using the command
