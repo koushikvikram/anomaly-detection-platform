@@ -77,7 +77,7 @@ choco install make
 
 ## Platform Architecture
 
-![](images/architecture-square-grey-background.png)
+<!-- ![](images/architecture-square-grey-background.png) -->
 
 ## Makefile Documentation
 
