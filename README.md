@@ -22,6 +22,17 @@ Please make sure you install a version of Python 3.x
 </details>
 
 <details>
+<summary> Git BASH (for Windows users) </summary>
+
+![](images/git-bash.jpg)
+
+Git BASH is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience.
+
+Install Git BASH if you're on a Windows machine by following the instructions here: https://gitforwindows.org/
+
+</details>
+
+<details>
 <summary> make </summary>
 
 ![](images/gnu-make.png)
