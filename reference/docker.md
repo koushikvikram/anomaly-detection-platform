@@ -7,3 +7,5 @@
 [Docker Compose in 12 Minutes](https://www.youtube.com/watch?v=Qw9zlE3t8Ko)
 
 [Docker - Remove images by name](https://docs.docker.com/engine/reference/commandline/rmi/#examples)
+
+[Docker Tip #30: Running Docker Compose from a Different Directory](https://nickjanetakis.com/blog/docker-tip-30-running-docker-compose-from-a-different-directory)
