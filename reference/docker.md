@@ -5,3 +5,5 @@
 [StackOverflow - Docker forever in "Docker is starting.." at Windows task](https://stackoverflow.com/questions/43041331/docker-forever-in-docker-is-starting-at-windows-task)
 
 [Docker Compose in 12 Minutes](https://www.youtube.com/watch?v=Qw9zlE3t8Ko)
+
+[Docker - Remove images by name](https://docs.docker.com/engine/reference/commandline/rmi/#examples)
