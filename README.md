@@ -4,7 +4,7 @@
 
 ![](images/dashboard-gif.gif)
 
-> We've done our development and testing on Windows 10 and used `Git Bash` to run our commands.
+> We've done our development and testing on Windows 10 and used `Git Bash` to execute the commands.
 
 ## Software Requirements
 
