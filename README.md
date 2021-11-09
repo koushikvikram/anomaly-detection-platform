@@ -139,6 +139,11 @@ in *tester/tester.py* and uncomment the following line:
 | test-platform | Create Python Virtual Environment, run the tester script and visualize output in Grafana |
 | remove-env    | Delete the Python Virtual Environment created for testing        |
 
+We recommend running `make` commands in `run`-`stop` pairs.
+
+If you'd like to experiment with a different dataset or model, feel free to spin up a JupyterLab container by running the command, `make run-jupyter`. Once you're done with development, make sure to stop the container using the command `make stop-jupyter`.
+
+To test the Prediction API, run `make run-api` and go to `http://localhost:8000/docs`. For each endpoint, you should have a button named `Try it out`. Click on it and then press `Execute`. Make sure that the data is in the right format when you make a `POST` request. Do make sure to stop the Prediction API container when you're done using the command `make stop-api`.
 
 ## API Documentation
 
