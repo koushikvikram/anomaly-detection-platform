@@ -4,8 +4,6 @@
 
 ![](images/dashboard-gif.gif)
 
-> We've done our development and testing on Windows 10 and used `Git Bash` to execute the commands.
-
 ## Software Requirements
 
 You'll need the following sofware to run the Anomaly Detection Platform.
@@ -78,6 +76,33 @@ choco install make
 ## Platform Architecture
 
 ![](images/architecture-square-grey-background-monitoring-block.png)
+
+## How To Run The Platform
+
+> We've done our development and testing on Windows 10 and used `Git Bash` to execute the commands and we recommend running Docker Engine as Administrator.
+
+> However, you shouldn't have any problem running the Platform on any other Operating System.
+
+To watch a demo of the Real-Time Anomaly Detection Platform, execute the steps below.
+1. Clone this repository to your local computer. Alternatively, you can download the code as a zip file and extract it.
+2. Open Git Bash if you're on Windows or the Terminal if you're on Mac/Linux.
+3. `cd` into the `anomaly-detection-platform` directory.
+4. Run the platform using the command `make run-platform`.
+5. Wait for docker to create/pull the necessary images and build all the containers. Upon completion, you should see the URLs to access the Prediction API, Prometheus and Grafana services.
+6. On your browser, access Grafana by gooing to the URL: `http://localhost:3000/?orgId=1`
+7. If prompted for Username and Password, use **admin** and **admin** respectively to login.
+8. Then, go to Dashboards -> Manage ![](images/grafana-dashboards-manage.png)
+9. Click on the dashboard named **Service**.
+10. On the top-right corner, set **Relative Time Range** to 15 minutes and **Refresh** to 10s. ![](images/grafana-time.png)
+11. Back on the Terminal/Git Bash, run `make test-platform` if you're on Windows. On Mac/Linux, use `make test-platform OS=other`.
+12. This should build a Python Virtual Environment on your local machine and run the tester.py script. Once you start seeing predictions on your terminal like the following: ![](images/pred.png), switch back to Grafana on you browser and you should see the Prometheus metrics being tracked in real-time as long as tester.py is running.
+13. We've only making 1000 requests in tester.py file. If you want the test to run longer, uncomment the following line in tester/tester.py: 
+```python
+# test_dataset.apply(predict, axis=1) # uncomment to predict on full test set
+```
+14. Once the simulation is done, it's time to clean up. First, stop the platform using the command `make stop-platform`.
+15. Then, clean up `__pycache__` and the Python Virtual Environment using the command `make remove-env`.
+16. Finally, clean up the platform's docker images and containers by running the command `make remove-all`.
 
 ## Makefile Documentation
 

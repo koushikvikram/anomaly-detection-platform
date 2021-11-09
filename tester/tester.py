@@ -23,7 +23,7 @@ def predict(feature_vector):
 
 # predict on a subset
 test_dataset[:1000].apply(predict, axis=1)
-# test_dataset.apply(predict, axis=1)
+# test_dataset.apply(predict, axis=1) # uncomment to predict on full test set
 
 model_info = requests.get(
     model_information_endpoint
