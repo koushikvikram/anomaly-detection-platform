@@ -77,6 +77,13 @@ choco install make
 
 ![](images/architecture-square-grey-background-monitoring-block.png)
 
+Our Platform is built using the following tools:
+- [JupyterLab](https://jupyter.org/) - An extensible environment for interactive and reproducible computing, based on the Jupyter Notebook and Architecture.
+- [FastAPI](https://fastapi.tiangolo.com/) - FastAPI is a Web framework for developing RESTful APIs in Python.
+- [Caddy](https://caddyserver.com/) - The Caddy web server is an extensible, cross-platform, open-source web server written in Go. The name "Caddy" refers both to a helper for tedious tasks, and a way to organize multiple parts into a simplified system.
+- [Prometheus](https://prometheus.io/) - Prometheus is a free software application used for event monitoring and alerting. 
+- [Grafana](https://grafana.com/) - Grafana is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources.
+
 ## How To Run The Platform
 
 > We've done our development and testing on Windows 10 and used `Git Bash` to execute the commands and we recommend running Docker Engine as Administrator.
@@ -160,3 +167,13 @@ curl -X 'GET' \
   'http://localhost:8080/model_information' \
   -H 'accept: application/json'
 ```
+
+## Acknowledgment
+
+Articles and videos used as reference are documented in the [reference](https://github.com/koushikvikram/anomaly-detection-platform/tree/main/reference) directory.
+
+If you run into issues while testing the platform, please create an issue on this GitHub repository at the following link and I'll be glad to fix it: https://github.com/koushikvikram/anomaly-detection-platform/issues
+
+If you'd like to collaborate with me or hire me, please feel free to send an email to koushikvikram91@gmail.com
+
+Make sure to check out other repositories on my [homepage](https://github.com/koushikvikram).
