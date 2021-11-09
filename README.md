@@ -95,12 +95,12 @@ To watch a demo of the Real-Time Anomaly Detection Platform, execute the steps b
 9. Click on the dashboard named **Service**.
 10. On the top-right corner, set **Relative Time Range** to 15 minutes and **Refresh** to 10s. ![](images/grafana-time.png)
 11. Back on the Terminal/Git Bash, run `make test-platform` if you're on Windows. On Mac/Linux, use `make test-platform OS=other`.
-12. This should build a Python Virtual Environment on your local machine and run the tester.py script. Once you start seeing predictions on your terminal like the following: ![](images/pred.png), switch back to Grafana on you browser and you should see the Prometheus metrics being tracked in real-time as long as tester.py is running.
+12. This should build a Python Virtual Environment on your local machine and run the *tester.py* script. Once you start seeing predictions on your terminal like the following: ![](images/pred.png), switch back to Grafana on you browser and you should see the Prometheus metrics being tracked in real-time as long as *tester.py* is running.
 13. We've only making 1000 requests in tester.py file. If you want the test to run longer, comment out 
 ```python
 test_dataset[:1000].apply(predict, axis=1)
 ```
-in tester/tester.py and uncomment the following line:
+in *tester/tester.py* and uncomment the following line:
 ```python
 # test_dataset.apply(predict, axis=1) # uncomment to predict on full test set
 ```
