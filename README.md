@@ -1,7 +1,5 @@
 # A Real-Time Anomaly Detection Platform
 
-> 🚦⚠️👷‍♂️🏗️ Repo Under Construction 🚦⚠️👷‍♂️🏗️
-
 ![](images/dashboard-gif.gif)
 
 ## Software Requirements
