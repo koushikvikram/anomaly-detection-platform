@@ -2,6 +2,15 @@
 
 ![](images/dashboard-gif.gif)
 
+## Contents
+1. [Software Requirements](https://github.com/koushikvikram/anomaly-detection-platform#software-requirements)
+2. [Install `make` on Windows](https://github.com/koushikvikram/anomaly-detection-platform#install-make-on-windows)
+3. [Platform Architecture](https://github.com/koushikvikram/anomaly-detection-platform#platform-architecture)
+4. [How To Run The Platform](https://github.com/koushikvikram/anomaly-detection-platform#how-to-run-the-platform)
+5. [Makefile Documentation](https://github.com/koushikvikram/anomaly-detection-platform#makefile-documentation)
+6. [API Documentation](https://github.com/koushikvikram/anomaly-detection-platform#api-documentation)
+7. [Acknowledgment](https://github.com/koushikvikram/anomaly-detection-platform#acknowledgment)
+
 ## Software Requirements
 
 You'll need the following sofware to run the Anomaly Detection Platform.
