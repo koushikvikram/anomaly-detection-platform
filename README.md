@@ -1,4 +1,4 @@
-# A Real-Time Anomaly Detection Platform
+# Real-Time Anomaly Detection Platform
 
 ![](images/dashboard-gif.gif)
 
