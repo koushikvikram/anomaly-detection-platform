@@ -13,6 +13,8 @@
 
 ## Software Requirements
 
+![](images/anomaly-platform-prereq.png)
+
 You'll need the following sofware to run the Anomaly Detection Platform.
 <details>
 <summary> Python 3.x </summary>
