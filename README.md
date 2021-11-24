@@ -1,5 +1,15 @@
 # Real-Time Anomaly Detection Platform
 
+<p align=”left”>
+  <a href=”https://github.com/koushikvikram”>
+    <img src=”https://img.shields.io/badge/author-Koushik%20Vikram-brightgreen">
+  </a>
+
+  <a href=”https://www.linkedin.com/in/koushikvikram/”>
+    <img src=”https://img.shields.io/badge/-Koushik%20Vikram-blue?style=flat&logo=linkedin">
+  </a>
+</p>
+
 ![](images/dashboard-gif.gif)
 
 ## Contents
